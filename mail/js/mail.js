@@ -10,7 +10,7 @@ let emailTrovata = false;
 for (i = 0; i < emailUser.length; i++) {
     if (emailUser === emailFestino[i]) {
         emailTrovata = true;
-    }else {}
+    }
 }
 
 // CONDIZIONI SE EMAIL è CONTENUTA ALL'INTERNO DELL'ARRAY
@@ -19,6 +19,3 @@ if (emailTrovata == true) {
 } else {
     alert("Mi dispiace ma non sei invitato alla festa!!!")
 }
-
-
-

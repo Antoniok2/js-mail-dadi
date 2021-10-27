@@ -3,11 +3,12 @@
 const emailFestino = ["ciao@gmail.com", "benvenuto@gmail.com", "festa@gmail.com", "pippo@gmail.com"];
 let emailUser = prompt("Inserisco la tua email");
 let emailTrovata = false;
+let festaOrg = document.getElementById("festa");
 
 
 // ESECUZIONE ESERCIZIO
 // CONDIZIONI E CICLO
-for (i = 0; i < emailUser.length; i++) {
+for (let i = 0; i < emailUser.length; i++) {
     if (emailUser === emailFestino[i]) {
         emailTrovata = true;
     }
@@ -15,7 +16,7 @@ for (i = 0; i < emailUser.length; i++) {
 
 // CONDIZIONI SE EMAIL è CONTENUTA ALL'INTERNO DELL'ARRAY
 if (emailTrovata == true) {
-    alert("Sei il benvenuto alla festa")
+    festaOrg.innerHTML = ("Sei il benvenuto alla festa");
 } else {
-    alert("Mi dispiace ma non sei invitato alla festa!!!")
+    festaOrg.innerHTML = ("Mi dispiace ma non sei invitato alla festa!!!");
 }

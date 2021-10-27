@@ -11,9 +11,11 @@ console.log(pcNumber);
 
 // CONDIZIONI SVILUPPO ESERCIZIO
 if (userNumber > pcNumber) {
-    risultatoDado = alert("Complimenti, hai vinto TU!");
+    risultatoDado = alert("Complimenti, hai vinto TU!")
 }else if (userNumber < pcNumber) {
-    risultatoDado = alert("Mi dispiace, il PC ha vinto!");
-};
+    risultatoDado = alert("Mi dispiace, il PC ha vinto!")
+}else if (userNumber === pcNumber) {
+    risultatoDado = alert("Hai pareggiato")
+}
 
-console.log(risultatoDado);
+console.log(risultatoDado); 
